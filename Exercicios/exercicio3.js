@@ -40,7 +40,7 @@ const printMonthlyStatistics = (monthlyStatistics) => {
 };
 
 const main = () => {
-    const jsonData = loadJsonFile('./Dados/dadorE3.json');
+    const jsonData = loadJsonFile('./Dados/dadosE3.json');
     const dailyRevenues = getDailyRevenues(jsonData);
     const monthlyStatistics = calculateMonthlyStatistics(dailyRevenues);
     printMonthlyStatistics(monthlyStatistics);
